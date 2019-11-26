@@ -11,5 +11,10 @@ pipeline {
                 sh 'npm install' 
             }
         }
+        stage('Echo') {
+            steps {
+                echo 'Hello There'
+            }
+        }
     }
 }
